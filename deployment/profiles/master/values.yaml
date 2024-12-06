@@ -1,0 +1,14 @@
+newrelic:
+  labels: 'Environment:AWS-Master;Team:AioliOrgTest;Service:node-project2'
+
+ingress_external:
+  enabled: false
+  host: node-project2.master.squads-dev.com
+
+ingress_restricted:
+  enabled: true
+  host: node-project2.master.squads-dev.com
+
+virtualservice_restricted:
+  enabled: false
+  host: use1-master-node-project2.percipio.com
