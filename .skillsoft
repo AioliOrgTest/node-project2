@@ -1,0 +1,13 @@
+#DOCUMENTATION: https://skillsoftdev.atlassian.net/wiki/spaces/devops/pages/3363799041/Service+Source+of+Truth+-+The+new+.skillsoft+file
+harnessServiceName: node-project2
+healthCheckAll: true
+healthCheckAllUser: node-project2-username-<+env.name>
+healthCheckAllPassword: node-project2-password-<+env.name>
+includeCDTests: [UI,BFF,BE]
+newRelicAppName: node-project2
+podAnnotations:
+  jiraKey: ENGSEC
+  repo: https://github.skillsoft.com/AioliOrgTest/node-project2
+  squad: ENGSEC
+runCDTests: false
+slackNotificationChannel: ENGSEC-squad
